@@ -30,5 +30,21 @@ public class Performance implements Comparable<Performance>{
 		this.lastTime = lastTime;
 		this.maxCap = maxCap;
 	}
+	
+	public String getVenue() {
+		return venue;
+	}
+	
+	public int getStartTime() {
+		return startTime;
+	}
+	
+	public int getLastTime() {
+		return lastTime;
+	}
+
+	public int getMaxCap() {
+		return maxCap;
+	}
 
 }

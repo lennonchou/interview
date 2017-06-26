@@ -27,4 +27,19 @@ public class Organization {
 	public boolean removeEvent(Event e) {
 		return events.remove(e);
 	}
+
+	public Category getCat() {
+		return cat;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public TreeSet<Event> getEvents() {
+		TreeSet<Event> copy = new TreeSet<>();
+		copy.addAll(events);
+		// return copy so the content in events can not be changed unless using public method addEvent
+		return copy;
+	}
 }

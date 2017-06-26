@@ -82,7 +82,7 @@ public class MyExecutor<V>{
 							
 							System.out.println("The task " + taskId + " is interrupted");
 						}
-						return word;
+						return word.charAt(50);
 					}
 					
 				};

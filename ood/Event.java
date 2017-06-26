@@ -35,4 +35,19 @@ public class Event implements Comparable<Event> {
 	public boolean removePerformance(Performance p) {
 		return performances.remove(p);
 	}
+	
+	public String getTitle() {
+		return title;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+	
+	public TreeSet<Performance> getPerformances() {
+		TreeSet<Performance> copy = new TreeSet<>();
+		copy.addAll(performances);
+		// return copy so the content in performances can not be changed unless using public method addPerformance
+		return copy;
+	}
 }
